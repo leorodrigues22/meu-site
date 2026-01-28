@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #242425;
+  color: #e7e7db;
+}
+
+.topo {
+  background: black;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 180px;
+}
+
+nav {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 12px;
+}
+
+.banner {
+  background: #19191a;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+form input,
+form button {
+  margin: 8px 0;
+  padding: 10px;
+}
+
+footer {
+  background: #1b1b1b;
+  padding: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: column;
+  }
+  nav {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
