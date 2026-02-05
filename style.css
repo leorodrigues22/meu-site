@@ -1,14 +1,37 @@
+/* RESET GERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   background: #0f0f0f;
   color: #fff;
   line-height: 1.6;
+}
+
+/* RESET ABSOLUTO DE LINKS (PC + CELULAR) */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus,
+a:-webkit-any-link {
+  color: #fff !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  text-decoration-style: solid !important;
+  text-underline-offset: 0 !important;
+}
+
+a::before,
+a::after {
+  text-decoration: none !important;
 }
 
 /* HEADER */
@@ -35,8 +58,6 @@ header nav {
 }
 
 header nav a {
-  text-decoration: none;
-  color: #fff;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -45,22 +66,17 @@ header nav a:hover {
   color: #25D366;
 }
 
-/* RESPONSIVO HEADER */
+/* HEADER RESPONSIVO */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: center;
     gap: 12px;
   }
 
   header nav {
     flex-direction: column;
-    gap: 12px;
     width: 100%;
-  }
-
-  header nav a {
-    margin: 0;
+    gap: 12px;
   }
 }
 
@@ -82,12 +98,12 @@ header nav a:hover {
   color: #ccc;
 }
 
+/* BOTÃO */
 .btn {
   background: #25D366;
-  color: #000;
+  color: #000 !important;
   padding: 14px 32px;
   border-radius: 40px;
-  text-decoration: none;
   font-weight: 600;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -121,6 +137,7 @@ header nav a:hover {
   border-radius: 18px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -128,12 +145,17 @@ header nav a:hover {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
+.card,
+.card * {
+  color: #fff !important;
+}
+
 .card h3 {
   margin-bottom: 15px;
 }
 
 .card p {
-  color: #ccc;
+  color: #fff !important;
 }
 
 .card img {
@@ -144,14 +166,7 @@ header nav a:hover {
   margin-bottom: 12px;
 }
 
-.center {
-  text-align: center;
-  max-width: 700px;
-  margin: auto;
-  color: #ccc;
-}
-
-/* SOBRE INFO EMPRESA */
+/* SOBRE */
 .info-empresa {
   margin-top: 30px;
   display: grid;
@@ -162,7 +177,6 @@ header nav a:hover {
 
 .info-texto p {
   margin-bottom: 15px;
-  line-height: 1.6;
 }
 
 .info-texto strong {
@@ -174,7 +188,7 @@ header nav a:hover {
   border-radius: 12px;
 }
 
-/* RESPONSIVO SEÇÃO SOBRE */
+/* RESPONSIVO SOBRE */
 @media (max-width: 768px) {
   .info-empresa {
     grid-template-columns: 1fr;
@@ -229,26 +243,3 @@ footer {
   transform: scale(1.12);
   box-shadow: 0 12px 28px rgba(0,0,0,0.6);
 }
-/* GARANTE TEXTO DOS CARDS SEMPRE BRANCO */
-.cards-servicos,
-.cards-servicos *,
-.card,
-.card * {
-  color: #fff !important;
-}
-/* REMOVE SUBLINHADO AZUL E COR DE LINKS (PC + CELULAR) */
-a,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none !important;
-  color: #fff !important;
-}
-
-/* Caso os cards inteiros sejam links */
-.card a,
-.card a * {
-  text-decoration: none !important;
-  color: #fff !important;
-}
-
