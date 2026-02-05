@@ -288,6 +288,36 @@ footer {
   .info-empresa {
     grid-template-columns: 1fr;
   }
+
+  .info-empresa {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.info-texto p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.info-texto strong {
+  color: #fff; /* mantém a cor clara do texto */
+}
+
+.info-mapa iframe {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* RESPONSIVO CELULAR */
+@media (max-width: 768px) {
+  .info-empresa {
+    grid-template-columns: 1fr;
+  }
+}
+
 }
 
 
