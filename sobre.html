@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body { scroll-behavior: smooth; }
-    .hero { background: linear-gradient(135deg, #0d6efd, #084298); min-height: 300px; color: white; padding: 60px 20px; text-align: center; border-radius: 12px; }
+    .hero { min-height: 300px; color: rgb(14, 13, 13); padding: 60px 20px; text-align: center; border-radius: 12px; background: none; }
     .nav-btn { padding: 8px 14px; border-radius: 8px; font-weight: 500; color: #333; text-decoration: none; transition: all 0.25s ease; }
     .nav-btn:hover { background: #f1f1f1; color: #0d6efd; }
-    .section-content { max-width: 900px; margin: auto; text-align: center; }
+    .section-content { max-width: 1000px; margin: auto; }
+    .section-img { border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); width: 100%; height: auto; }
     .btn-back { margin-top: 30px; }
   </style>
 </head>
@@ -25,7 +26,7 @@
       <a href="eletrica.html" class="nav-btn">Elétrica</a>
       <a href="predial.html" class="nav-btn">Predial</a>
       <a href="bombeamento.html" class="nav-btn">Bombeamento</a>
-      <a href="sobre.html" class="nav-btn">Sobre</a>
+      <a href="sobre.html" class="nav-btn nav-btn-primary">Sobre</a>
     </nav>
   </div>
 </header>
@@ -34,7 +35,6 @@
 
   <!-- HERO -->
   <section class="hero mb-5">
-    <i class="fas fa-building fa-4x mb-3"></i>
     <h1>Sobre a KMA Manutenção</h1>
     <p class="lead mt-3">
       Fundada em 16 de março de 2023, a <strong>KMA Manutenções LTDA - ME</strong> atua em Chapecó, SC, oferecendo serviços de instalação, manutenção e reparação de acessórios para veículos automotores.  
@@ -42,21 +42,26 @@
     </p>
   </section>
 
-  <!-- DETALHES -->
+  <!-- DETALHES COM FOTO AO LADO -->
   <section class="section-content mb-5">
-    <h2 class="mb-4">Nossa História e Valores</h2>
-    <p>
-      Desde a sua fundação, a KMA se destaca pela dedicação ao cliente, rapidez na execução dos serviços e uso de soluções modernas e seguras.  
-      Nosso objetivo é garantir que cada equipamento, instalação ou sistema reparado funcione com máximo desempenho e confiabilidade.  
-      Atuamos com transparência, profissionalismo e compromisso com a satisfação total dos nossos clientes.
-    </p>
-
-    <p>
-      Nossa sede está localizada na R. Adelino de Souza Pinto, 104, Letra E, Bairro Bom Retiro, Chapecó - SC.  
-      Contamos com equipe qualificada, estrutura moderna e atendimento personalizado para cada necessidade.
-    </p>
-
-    <a href="index.html" class="btn btn-primary btn-back mt-3">Voltar para Início</a>
+    <h2 class="mb-4 text-center">Nossa História e Valores</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <img src="empresa.png" alt="Nossa sede" class="section-img">
+      </div>
+      <div class="col-md-6">
+        <p>
+          Desde a sua fundação, a KMA se destaca pela dedicação ao cliente, rapidez na execução dos serviços e uso de soluções modernas e seguras.  
+          Nosso objetivo é garantir que cada equipamento, instalação ou sistema reparado funcione com máximo desempenho e confiabilidade.  
+          Atuamos com transparência, profissionalismo e compromisso com a satisfação total dos nossos clientes.
+        </p>
+        <p>
+          Nossa sede está localizada na R. Adelino de Souza Pinto, 104, Letra E, Bairro Bom Retiro, Chapecó - SC.  
+          Contamos com equipe qualificada, estrutura moderna e atendimento personalizado para cada necessidade.
+        </p>
+        <a href="index.html" class="btn btn-primary btn-back mt-3">Voltar para Início</a>
+      </div>
+    </div>
   </section>
 
 </main>
